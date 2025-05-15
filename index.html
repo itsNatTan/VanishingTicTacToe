@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vanishing Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css" />
+</head>  
+<body>
+  <h1>Vanishing Tic Tac Toe</h1>
+  <div id="controls">
+    <label>
+      <input type="checkbox" id="toggle-oldest" />
+      Show oldest piece 👁
+    </label>
+  </div>
+  <div id="setup">
+    <h2>Player Setup</h2>
+    <input type="text" id="playerX" placeholder="Enter name for Player X" />
+    <input type="text" id="playerO" placeholder="Enter name for Player O" />
+    <button id="start-game">🪙 Flip Coin & Start</button>
+  </div>
+
+  <!-- Scoreboard -->
+  <div id="scoreboard" class="hidden">
+    <p><strong><span id="nameX">Player X</span></strong>: <span id="scoreX">0</span> wins</p>
+    <p><strong><span id="nameO">Player O</span></strong>: <span id="scoreO">0</span> wins</p>
+  </div>
+
+  <div id="board"></div>
+  <p id="status"></p>
+  <button id="reset-button">🔄 Reset Game</button>
+
+  <!-- Modal -->
+  <div id="modal" class="hidden">
+    <div class="modal-content">
+      <span id="modal-close" class="close-button">&times;</span>
+      <p id="modal-message"></p>
+      <button id="modal-reset">🔄 Play Again</button>
+    </div>
+  </div>
+
+  <script src="game.js" defer></script>
+</body>
+</html>

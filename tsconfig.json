@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+      "target": "ES6",
+      "module": "none",
+      "outFile": "game.js",
+      "strict": true
+    }
+  }
+  
